@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apuntes, resúmenes, exámenes y trabajos del curso CIF-215 Información y usuarios, compartidos por estudiantes en BIBLIO H.">
+  <title>CIF-215 Información y usuarios | BIBLIO H</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+  <script src="curso.js" defer></script>
+</head>
+
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <!-- Franja institucional -->
+  <div class="top-bar">
+    <div class="top-bar__inner">
+      <span>Pontificia Universidad Católica del Perú · Facultad de Letras y Ciencias Humanas</span>
+      <a href="https://facultad.pucp.edu.pe/letras-ciencias-humanas/" target="_blank" rel="noopener">Ir al sitio de la Facultad →</a>
+    </div>
+  </div>
+
+  <div class="layout">
+
+    <!-- ===================== COLUMNA PRINCIPAL ===================== -->
+    <div class="main-col">
+
+      <!-- Cabecera -->
+      <header class="site-header">
+        <a href="index.html" class="logo" aria-label="BIBLIO H, volver al inicio">
+          <span class="logo__title">BIBLIO <span>H</span></span>
+          <span class="logo__subtitle">Letras y Ciencias Humanas</span>
+        </a>
+
+        <div class="hero" role="img" aria-label="Banner de BIBLIO H">
+          <div>
+            <p class="hero__eyebrow">Repositorio estudiantil</p>
+            <p class="hero__title">Conocimiento de y para estudiantes</p>
+            <p class="hero__text">Materiales educativos compartidos por la comunidad estudiantil de la Facultad de Letras y Ciencias Humanas de la PUCP.</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navegación -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html#recursos" class="main-nav__link is-active">Recursos</a>
+
+        <form class="search" role="search" action="#" method="get">
+          <label for="buscar" class="sr-only">Buscar en el repositorio</label>
+          <input type="search" id="buscar" name="q" placeholder="Buscar en CIF-215…">
+          <button type="submit" aria-label="Buscar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+            </svg>
+          </button>
+        </form>
+
+        <a href="#sobre-nosotros" class="main-nav__link">Sobre nosotros</a>
+      </nav>
+
+      <main id="contenido">
+
+        <!-- Migas de pan -->
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#recursos">Especialidades</a></li>
+            <!-- ENLACE 1 a la especialidad: cambia el nombre del archivo si el tuyo es distinto -->
+            <li><a href="cienciasdelainformacion.html">Ciencias de la Información</a></li>
+            <li><span aria-current="page">CIF-215</span></li>
+          </ol>
+        </nav>
+
+        <!-- Encabezado del curso -->
+        <header class="course-head">
+          <div>
+            <p class="page-head__eyebrow">Curso · Nivel 1</p>
+            <h1 class="course-head__title">
+              <span class="course-head__code">CIF-215</span><span class="course-head__sep">·</span>Información y usuarios
+            </h1>
+          </div>
+          <!-- ENLACE 2 a la especialidad -->
+          <a href="cienciasdelainformacion.html" class="course-head__specialty">← Ciencias de la Información</a>
+        </header>
+
+        <div class="course-layout">
+
+          <!-- ===================== FILTROS ===================== -->
+          <aside class="filters" aria-labelledby="titulo-filtros">
+            <h2 class="filters__title" id="titulo-filtros">Filtros</h2>
+
+            <fieldset>
+              <legend class="filters__legend">Tipo de material</legend>
+              <ul class="filters__list">
+                <li class="filter"><label><input type="checkbox" value="apuntes"><span class="filter__text">Apuntes de clase</span><span class="filter__count">0</span></label></li>
+                <li class="filter"><label><input type="checkbox" value="resumenes"><span class="filter__text">Resúmenes de lecturas</span><span class="filter__count">0</span></label></li>
+                <li class="filter"><label><input type="checkbox" value="presentaciones"><span class="filter__text">Presentaciones</span><span class="filter__count">0</span></label></li>
+                <li class="filter"><label><input type="checkbox" value="ensayos"><span class="filter__text">Ensayos y trabajos de investigación</span><span class="filter__count">0</span></label></li>
+                <li class="filter"><label><input type="checkbox" value="proyectos"><span class="filter__text">Proyectos</span><span class="filter__count">0</span></label></li>
+                <li class="filter"><label><input type="checkbox" value="examenes"><span class="filter__text">Exámenes</span><span class="filter__count">0</span></label></li>
+                <li class="filter"><label><input type="checkbox" value="otros"><span class="filter__text">Otros materiales</span><span class="filter__count">0</span></label></li>
+              </ul>
+            </fieldset>
+
+            <button type="button" class="filters__clear" data-clear-filters hidden>Limpiar filtros</button>
+          </aside>
+
+          <!-- ===================== LISTA DE MATERIALES ===================== -->
+          <section aria-labelledby="titulo-materiales">
+            <h2 id="titulo-materiales" class="sr-only">Materiales del curso</h2>
+
+            <div class="materials-toolbar">
+              <p class="materials-toolbar__count" data-results-count aria-live="polite"><strong>5</strong> materiales</p>
+              <div class="sort">
+                <label for="ordenar">Ordenar por:</label>
+                <select id="ordenar">
+                  <option value="ciclo-desc" selected>Ciclo (descendente)</option>
+                  <option value="ciclo-asc">Ciclo (ascendente)</option>
+                  <option value="titulo-asc">Título (A–Z)</option>
+                  <option value="autor-asc">Autor (A–Z)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="materials">
+              <ul class="materials__list" data-materials>
+
+                <li class="material" data-tipo="apuntes" data-ciclo="2025-1" data-titulo="Apuntes semana 7" data-autor="Andrea Laya">
+                  <a href="#" class="material__link">
+                    <span class="material__format" aria-hidden="true">PDF</span>
+                    <span>
+                      <span class="material__title">Apuntes semana 7</span>
+                      <span class="material__meta"><span>Ciclo 2025-1</span><span class="material__type">Apuntes de clase</span></span>
+                    </span>
+                    <span class="material__author">Andrea Laya</span>
+                  </a>
+                </li>
+
+                <li class="material" data-tipo="examenes" data-ciclo="2025-1" data-titulo="Control de lectura 3" data-autor="Luis García">
+                  <a href="#" class="material__link">
+                    <span class="material__format" aria-hidden="true">PDF</span>
+                    <span>
+                      <span class="material__title">Control de lectura 3</span>
+                      <span class="material__meta"><span>Ciclo 2025-1</span><span class="material__type">Exámenes</span></span>
+                    </span>
+                    <span class="material__author">Luis García</span>
+                  </a>
+                </li>
+
+                <li class="material" data-tipo="apuntes" data-ciclo="2024-1" data-titulo="Apuntes de la segunda mitad del ciclo" data-autor="Ariana Cubillas">
+                  <a href="#" class="material__link">
+                    <span class="material__format" aria-hidden="true">DOCX</span>
+                    <span>
+                      <span class="material__title">Apuntes de la segunda mitad del ciclo</span>
+                      <span class="material__meta"><span>Ciclo 2024-1</span><span class="material__type">Apuntes de clase</span></span>
+                    </span>
+                    <span class="material__author">Ariana Cubillas</span>
+                  </a>
+                </li>
+
+                <li class="material" data-tipo="examenes" data-ciclo="2023-1" data-titulo="Examen parcial" data-autor="Milagros Joya">
+                  <a href="#" class="material__link">
+                    <span class="material__format" aria-hidden="true">PDF</span>
+                    <span>
+                      <span class="material__title">Examen parcial</span>
+                      <span class="material__meta"><span>Ciclo 2023-1</span><span class="material__type">Exámenes</span></span>
+                    </span>
+                    <span class="material__author">Milagros Joya</span>
+                  </a>
+                </li>
+
+                <li class="material" data-tipo="ensayos" data-ciclo="2023-1" data-titulo="Trabajo final" data-autor="Renato Velarde">
+                  <a href="#" class="material__link">
+                    <span class="material__format" aria-hidden="true">PDF</span>
+                    <span>
+                      <span class="material__title">Trabajo final</span>
+                      <span class="material__meta"><span>Ciclo 2023-1</span><span class="material__type">Ensayos y trabajos de investigación</span></span>
+                    </span>
+                    <span class="material__author">Renato Velarde</span>
+                  </a>
+                </li>
+
+              </ul>
+
+              <!-- Mensaje cuando ningún material coincide con los filtros -->
+              <div class="materials__empty" data-empty hidden>
+                <strong>No hay materiales de este tipo todavía</strong>
+                ¿Tienes alguno de este curso? <a href="#">Compártelo con la comunidad →</a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </main>
+    </div>
+
+    <!-- ===================== PANEL DE USUARIO ===================== -->
+    <aside class="user-panel" aria-label="Panel de usuario">
+      <div class="user-panel__profile">
+        <div class="avatar" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="8" r="4.2"></circle>
+            <path d="M3.5 21c0-4.4 3.8-7.5 8.5-7.5s8.5 3.1 8.5 7.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="user-panel__name">Ana Martínez</p>
+          <p class="user-panel__role">Estudiante · Letras</p>
+        </div>
+      </div>
+
+      <button type="button" class="btn-publish">Publicar</button>
+
+      <nav class="user-menu" aria-label="Menú de usuario">
+        <a href="#">Mi perfil</a>
+        <a href="#">Mi biblioteca</a>
+        <a href="#">Mis publicaciones</a>
+        <a href="#">Historial de búsquedas</a>
+        <a href="#" class="highlight">Asesorías</a>
+      </nav>
+    </aside>
+
+  </div>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="site-footer" id="sobre-nosotros">
+    <div class="site-footer__inner">
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="mailto:biblioh@pucp.edu.pe">Correo electrónico</a></li>
+          <li><a href="#">Redes sociales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>BIBLIO H</h2>
+        <p style="font-size:.95rem; max-width:380px;">Repositorio administrado por estudiantes. Todos los contenidos son elaborados por y para la comunidad estudiantil de la Facultad.</p>
+      </div>
+
+      <ul class="site-footer__links">
+        <li><a href="#">Políticas de uso</a></li>
+        <li><a href="#">Guías de uso</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__bottom">
+      © 2025 <strong>BIBLIO H</strong> · Facultad de Letras y Ciencias Humanas · Pontificia Universidad Católica del Perú
+    </div>
+  </footer>
+</body>
+</html>
